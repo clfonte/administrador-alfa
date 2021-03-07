@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+    <!-- chamando o arquivo configurado para a header -->
+    <%- include layouts/header %>
+
+<body>
+    <%- include layouts/navbar %>
+
+    <div>
+        <!-- iniciando row -->
+        <div class="row">
+            <div class="col-sm-2">
+                <%- include layouts/menu %>
+            </div>
+
+            <div class="col-sm-10 mt-3">
+                <%- body %>
+            </div>
+        </div> 
+        <!-- finalizando row -->
+    </div>
+
+    <%- include layouts/footer %>
+</body>
+</html>
